@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>JSF 2: Blank Starting-Point Project</title>
+	<link href="./css/styles.css" rel="stylesheet" type="text/css" />
+</h:head>
+<h:body>
+	<h1 class="title">JSF 2: Blank Starting-Point Project</h1>
+	<div align="center">
+		<fieldset>
+			<legend>JSF Test Form</legend>
+			<h:form>
+  Some random data: <h:inputText value="#{someBean.someProperty}" />
+				<br />
+				<!-- Corresponds to getSomeProperty and setSomeProperty -->
+				<!-- Calls "someActionControllerMethod" and uses return value as base name of page to navigate to. -->
+				<h:commandButton value="Go to Page B"
+					action="#{someBean.generatePDF}" />
+			</h:form>
+		</fieldset>
+	</div>
+</h:body>
+</html>

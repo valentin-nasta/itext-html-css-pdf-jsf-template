@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>Your Title Here</title>
+	<link href="./css/styles.css" rel="stylesheet" type="text/css" />
+	<!--  Assumes you have styles.css in WebContent/css/ -->
+</h:head>
+<h:body>
+	<h1>Your Heading Here</h1>
+	<!-- Other HTML tags and non-input JSF elements here -->
+
+	<h:form>
+		<!-- This means bean named "yourBean" must have getYourProperty and setYourProperty -->
+		<h:inputText value="#{yourBean.yourProperty}" />
+
+		<!-- This means bean named "yourBean" must have method named "yourActionController" that
+       takes no arguments and returns a String -->
+		<h:commandButton value="Click Me"
+			action="#{yourBean.yourActionController}" />
+	</h:form>
+
+	<!-- Other HTML tags and non-input JSF elements here -->
+</h:body>
+</html>
